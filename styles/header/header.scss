@@ -1,0 +1,218 @@
+$headerBg: white;
+$menuHoverColor: #be9278;
+@mixin elementCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  background-color: $headerBg;
+  .logo {
+    padding-left: 80px;
+    width: 82px;
+  }
+  a:hover {
+    color: $menuHoverColor !important;
+  }
+  .navigation {
+    width: 760px;
+    height: 78px;
+    display: flex;
+    text-transform: capitalize;
+    justify-content: space-between;
+
+    .open-menu {
+      width: 68%;
+      margin-left: 13%;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      li {
+        a {
+          color: #101a31;
+          text-decoration: none;
+          font-weight: 600;
+          padding: 28px 28px;
+          display: block;
+          font-size: 15px;
+          outline: medium;
+        }
+      }
+
+      .close-menu {
+        position: absolute;
+        width: 170px;
+        background: #fff;
+        right: 280px;
+        top: 80px;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+        padding: 17px 0;
+        border-top: 5px solid $menuHoverColor;
+        transition: 0.3s;
+        li {
+          margin-left: 7px;
+          display: block !important;
+          a {
+            padding: 6px 10px !important;
+            font-size: 16px;
+            color: #1d2547;
+            font-weight: 700;
+          }
+        }
+      }
+      .blog a {
+        width: 92px;
+      }
+      .blog:hover > .close-menu {
+        visibility: visible;
+        opacity: 1;
+        animation: hoverBlogMenu 0.3s linear;
+      }
+    }
+    .visit {
+      @include elementCenter;
+      width: 190px;
+      height: 80px;
+      background: $menuHoverColor;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffff;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .burger {
+    display: none;
+    margin-right: 65px;
+    margin-top: -5px;
+    div {
+      background-color: $menuHoverColor;
+      width: 30px;
+      margin-top: 5px;
+      height: 3px;
+    }
+  }
+}
+
+@keyframes hoverBlogMenu {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+    padding-left: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .logo {
+    padding-left: 50px !important;
+  }
+  .visit {
+    display: none !important;
+  }
+  .navigation nav {
+    display: none;
+  }
+  .burger {
+    display: block !important;
+  }
+  .open-menu-bottom {
+    position: absolute;
+    display: flex !important;
+    justify-content: center;
+    right: 15px;
+    left: -7%;
+    top: 80px;
+    height: 230px;
+    width: 100% !important;
+    // transition: height 0.3s ease;
+    animation: openMenu 0.3s linear;
+    ul {
+      display: block !important;
+      padding-left: 5% !important;
+      padding-top: 2%;
+      width: 100% !important;
+      background-color: white;
+
+      li a {
+        margin: 2px 0px !important;
+        padding: 7px 0px !important;
+        color: rgb(109, 109, 109) !important;
+      }
+      .close-menu {
+        display: none !important;
+      }
+      .blog-menu {
+        display: block;
+        list-style: none;
+        visibility: visible !important;
+        padding: 0;
+        height: 100px !important;
+      }
+    }
+  }
+  .blog {
+    height: 33px;
+  }
+  .blog a {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100% !important;
+  }
+  .blog span {
+    display: block !important;
+    padding-right: 6%;
+    color: $menuHoverColor;
+    font-size: 22px;
+  }
+}
+@keyframes openMenu {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    padding-left: 15px !important;
+  }
+  .burger {
+    margin-right: 30px !important;
+  }
+  .open-menu-bottom {
+    right: 5px;
+    width: 109% !important;
+    left: -12%;
+  }
+}

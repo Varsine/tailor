@@ -1,0 +1,129 @@
+footer {
+  height: 601px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  background-image: url(../../images/footer-bg.webp);
+  .map {
+    width: 60%;
+    margin-top: 12%;
+    :last-child {
+      width: 80%;
+    }
+  }
+  .footer-content {
+    display: flex;
+    margin-top: 25%;
+    margin-left: 7%;
+    color: white;
+
+    .footer-content-left {
+      width: 60%;
+      p {
+        font-size: 16px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        line-height: 1.8;
+      }
+      .footer-tel {
+        margin-bottom: 40px;
+        a {
+          margin-bottom: 15px;
+          text-decoration: none;
+          font-size: 26px;
+          color: #be9278;
+          display: block;
+        }
+        :last-child {
+          font-size: 14px;
+          margin-bottom: 23px !important;
+          text-decoration: underline;
+        }
+      }
+      .footer-social a {
+        text-decoration: none;
+        display: inline-block;
+        color: #be9278;
+        background: rgba(103, 133, 255, 0.08);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 8px;
+      }
+    }
+    .footer-menu {
+      h2 {
+        color: #be9278;
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+      ul li {
+        list-style: none;
+        margin-bottom: 15px;
+        a {
+          color: #fff;
+          font-weight: 300;
+          font-size: 16px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .footer-end {
+    margin-top: 100px;
+    margin-left: -10%;
+    width: 110%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2;
+    display: inline-block;
+    a {
+      color: #be9278 !important;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.back-top {
+  background: #be9278;
+  height: 50px;
+  width: 50px;
+  right: 31px;
+  bottom: 18px;
+  position: fixed;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 48px;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+  transform: rotate(90deg) !important;
+}
+@media only screen and (max-width: 990px) {
+  .map {
+    display: none;
+  }
+  .footer-content {
+    width: 100% !important;
+    margin: 2% !important;
+    padding: 0;
+
+    h2 {
+      font-size: 25px !important;
+    }
+  }
+  .footer-end {
+    word-wrap: break-word;
+    margin-left: 20% !important;
+    width: 60% !important;
+    margin-top: 50px !important;
+  }
+  .footer-tel a {
+    font-size: 20px !important;
+  }
+}

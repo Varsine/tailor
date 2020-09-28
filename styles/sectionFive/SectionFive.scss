@@ -1,0 +1,56 @@
+@mixin elementCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-5 {
+  background-image: url(../../images/sec5-bg.png);
+  height: 730px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include elementCenter;
+  div {
+    @include elementCenter;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-color: rgba(190, 146, 120, 0.1);
+    div {
+      @include elementCenter;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      background: none;
+      border: 1px solid #be9278;
+      animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+      div {
+        @include elementCenter;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #be9278;
+        color: #ffff;
+        a {
+          transform: rotate(90deg);
+
+          i {
+            color: #ffff;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes btnIconRipple {
+  0% {
+    height: 100px;
+    width: 100px;
+  }
+
+  100% {
+    height: 170px;
+    width: 170px;
+  }
+}

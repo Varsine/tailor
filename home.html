@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/header/header.css" />
+    <link rel="stylesheet" href="./styles/sectionOne/SectionOne.css" />
+    <link rel="stylesheet" href="./styles/sectionTwo/SectionTwo.css" />
+    <link rel="stylesheet" href="./styles//sectionThree/SectionThree.css" />
+    <link rel="stylesheet" href="./styles/sectionFore/SectionFore.css" />
+    <link rel="stylesheet" href="./styles/sectionFive/SectionFive.css" />
+    <link rel="stylesheet" href="./styles//sectionSix/SectionSix.css" />
+    <link rel="stylesheet" href="./styles/footer/Footer.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Josefin+Sans"
+    />
+    <title>Tailor</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <img src="./images/logo.webp" alt="Tailor." />
+        </div>
+        <div class="navigation">
+          <nav>
+            <ul class="open-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li class="blog">
+                <a href="#" onclick="openBlogMenu()"
+                  >Blog<span class="plus" style="display: none">+</span></a
+                >
+                <ul class="close-menu">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog Details</a></li>
+                  <li><a href="#">Elements</a></li>
+                </ul>
+                <ul style="visibility: hidden; height: 0">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog Details</a></li>
+                  <li><a href="#">Elements</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="visit">
+            <a href="#">Visit us</a>
+          </div>
+        </div>
+        <div class="burger" style="display: none" onclick="menuOpen()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="box-1">
+        <div>
+          <div class="round">
+            <img src="./images//sec1-round.webp" alt="round" />
+          </div>
+          <h1>We make cloths that suit you</h1>
+          <p>
+            TLorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra ornare.
+          </p>
+          <a href="#" class="btn">Our Services</a>
+        </div>
+        <div class="rigth-img">
+          <img src="./images/sec1-img.webp" alt="" />
+        </div>
+      </section>
+      <section class="box-2">
+        <div class="offers-cap">
+          <div class="number">1</div>
+          <div class="img">
+            <img src="./images//sec2-1.png" alt="" />
+          </div>
+          <div class="content">
+            <h3><a href="#">Tailor Sweing</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+        </div>
+        <div class="offers-cap">
+          <div class="number">2</div>
+          <div class="img">
+            <img src="./images//sec2-2.png" alt="" />
+          </div>
+          <div class="content">
+            <h3><a href="#"> Mesurement </a></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+        </div>
+        <div class="offers-cap">
+          <div class="number">3</div>
+          <div class="img">
+            <img src="./images//sec2-3.png" alt="" />
+          </div>
+          <div class="content">
+            <h3><a href="#">Ready-made</a></h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="box-3">
+        <div class="left-bg">
+          <img src="./images/sec3-bg.webp" alt="" />
+        </div>
+        <div class="tailor-detalis">
+          <h2>About our<br />tailor house</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+          <p class="content-bottom">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare.
+          </p>
+          <a href="#" class="btn">More About Us</a>
+        </div>
+      </section>
+      <section class="box-4">
+        <div class="box-for-content">
+          <h1>Why use our service?</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Suspendisse varius enim in eros.</p>
+        </div>
+        <div class="tailor-sweing">
+          <div class="tailor-sweing-box">
+            <div><img src="./images/sec4-1.jpg" alt="" /></div>
+            <h3>Tailor Sweing</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <div class="tailor-sweing-box">
+            <div><img src="./images/sec4-2.jpg" alt="" /></div>
+            <h3>Tailor Sweing</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+
+          <div class="tailor-sweing-box">
+            <div><img src="./images/sec4-3.jpg" alt="" /></div>
+            <h3>Tailor Sweing</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <div class="tailor-sweing-box">
+            <div><img src="./images/sec4-4.jpg" alt="" /></div>
+            <h3>Tailor Sweing</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="box-5">
+        <div>
+          <div>
+            <div>
+              <a href="https://www.youtube.com/watch?v=up68UAfH0d0">
+                <i>
+                  <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 16 16"
+                    class="bi bi-caret-up-fill"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+                    /></svg></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="box-6">
+        <div class="box-6-content">
+          <div class="top-path">
+            <img src="./images/sec6-sign.webp" alt="" />
+            <p>
+              Brook presents your services with flexible, convenient and cdpose
+              layouts. You can select your favorite layouts & elements for cular
+              ts with unlimited ustomization possibilities. Pixel-perfect
+              replica;ition of thei designers ijtls intended csents your se.
+            </p>
+          </div>
+          <div class="botton-path">
+            <div><img src="./images/sec6-user.webp" alt="" /></div>
+            <div>
+              <span>Robart Brown</span>
+              <p>Creative designer at Colorlib</p>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <span
+            ><i
+              ><svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-arrow-left"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                /></svg></i
+          ></span>
+          <span>1</span>
+          <span>2</span>
+          <span
+            ><i
+              ><svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-arrow-right"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                /></svg></i
+          ></span>
+        </div>
+        <div></div>
+      </section>
+      <section class="box-7">
+        <div class="box-7-content">
+          <h2>Follow us on Instagram</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </div>
+        <div class="box-7-img">
+          <div><img src="./images/sec7-1.webp" alt="" /></div>
+          <div><img src="./images/sec7-2.webp" alt="" /></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.2273687701595!2d44.56362181475803!3d40.292910271085866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a9f1e26e69b77%3A0x43b7a43d70f65887!2sYerevan%20Yeghvard%20Airport!5e0!3m2!1sen!2s!4v1601099305379!5m2!1sen!2s"
+          width="600"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+
+      <div>
+        <div class="footer-content">
+          <div class="footer-content-left">
+            <img src="./images/logo.webp" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+            <div class="footer-tel">
+              <a href="">(80) 783 367-3904</a> <a href="">(80) 783 367-3904</a>
+            </div>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <h2>Our solutions</h2>
+            <ul>
+              <li><a href="#"> Home</a></li>
+              <li><a href="#"> About</a></li>
+              <li><a href="#"> Services</a></li>
+              <li><a href="#"> Blog</a></li>
+              <li><a href="#"> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-end">
+          Copyright ©2020 All rights reserved | This template is made with
+          <i
+            ><svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-suit-heart-fill"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+              />
+            </svg>
+          </i>
+          by <a href="#">Colorlib</a>
+        </p>
+      </div>
+    </footer>
+    <div class="back-top">
+      <i>
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-arrow-90deg-left"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"
+          />
+        </svg>
+      </i>
+    </div>
+
+    <script>
+      const menuOpen = () => {
+        document
+          .getElementsByTagName("nav")[0]
+          .classList.toggle("open-menu-bottom")
+      }
+      const openBlogMenu = () => {
+        document.getElementsByTagName("ul")[2].classList.toggle("blog-menu")
+        if (
+          document.getElementsByTagName("ul")[2].getAttribute("class") ===
+          "blog-menu"
+        ) {
+          document.getElementsByTagName("span")[0].innerHTML = "-"
+          document.getElementsByTagName("nav")[0].style.height = "320px"
+          document.getElementsByTagName("li")[3].style.height = "150px"
+        } else {
+          document.getElementsByTagName("span")[0].innerHTML = "+"
+          document.getElementsByTagName("nav")[0].style.height = "230px"
+          document.getElementsByTagName("li")[3].style.height = "33px"
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+.box-6 {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.box-6 .box-6-content {
+  width: 68%;
+  margin: 0 16%;
+}
+
+.box-6 .box-6-content .top-path p {
+  font-size: 19px;
+  color: #010a44;
+  line-height: 1.6;
+  margin-bottom: 46px;
+  width: 90%;
+  margin-left: 10%;
+  margin-top: -5%;
+}
+
+.box-6 .box-6-content .botton-path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+}
+
+.box-6 .box-6-content .botton-path div:last-child {
+  margin-top: 3%;
+}
+
+.box-6 .box-6-content .botton-path span {
+  color: #1d2547;
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+.box-6 .box-6-content .botton-path p {
+  color: #646d77;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.box-6 .pagination {
+  position: absolute;
+  right: 20%;
+  color: #be9278;
+  font-size: 16px;
+}
+
+.box-6 .pagination span:hover {
+  color: black;
+}
+
+/*<<<<<< section-7  >>>>>>>*/
+.box-7 .box-7-content {
+  text-align: center;
+  margin-bottom: 80px;
+  width: 40%;
+  margin-left: 25%;
+}
+
+.box-7 h2 {
+  font-size: 53px;
+  display: block;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #101a31;
+}
+
+.box-7 p {
+  color: #101a31;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.box-7 .box-7-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5%;
+}
+
+.box-7 .box-7-img div {
+  width: 50%;
+  margin: 0 2%;
+}
+
+.box-7 .box-7-img div img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .box-7-content h2 {
+    font-size: 36px !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .box-7-content {
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+  .box-7-content h2 {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .box-7-img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .box-7-img div {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=SectionSix.css.map */

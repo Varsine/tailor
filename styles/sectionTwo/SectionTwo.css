@@ -1,0 +1,138 @@
+.box-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 110px 6%;
+}
+
+.box-2 .offers-cap {
+  position: relative;
+  width: 33%;
+  padding-left: 70px;
+  margin-right: 2%;
+  -webkit-animation: offersCapTrans 0.8s linear;
+          animation: offersCapTrans 0.8s linear;
+}
+
+.box-2 .offers-cap div:first-child {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 67%;
+  font-size: 14px;
+  color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #c6a16e;
+  border: 1px solid #c6a16e;
+}
+
+.box-2 .offers-cap .img {
+  margin-bottom: 50px;
+  overflow: hidden;
+  height: 390px;
+  width: 100%;
+  padding: 0;
+}
+
+.box-2 .offers-cap .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100% !important;
+  margin: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.box-2 .offers-cap .content {
+  padding-right: 3%;
+}
+
+.box-2 .offers-cap .content h3 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.box-2 .offers-cap .content h3 a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.box-2 .offers-cap .content p {
+  color: #101a31;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.box-2 .offers-cap:hover > .content h3 a {
+  color: #c6a16e;
+}
+
+.box-2 .offers-cap:hover > .number {
+  background: none;
+  color: #c6a16e;
+}
+
+.box-2 .offers-cap:hover > .img img {
+  width: 110%;
+}
+
+@-webkit-keyframes offersCapTrans {
+  0% {
+    opacity: 0;
+    margin-top: 300px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes offersCapTrans {
+  0% {
+    opacity: 0;
+    margin-top: 300px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .offers-cap > div:first-child {
+    top: 60% !important;
+  }
+  .content h3 {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .box-2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .offers-cap {
+    width: 45% !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .img {
+    height: 250px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .offers-cap {
+    width: 90% !important;
+  }
+}
+/*# sourceMappingURL=SectionTwo.css.map */

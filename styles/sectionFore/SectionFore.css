@@ -1,0 +1,102 @@
+.box-4 {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+.box-4 .box-for-content {
+  text-align: center;
+}
+
+.box-4 .box-for-content h1 {
+  font-size: 53px;
+  display: block;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: josefin sans, sans-serif;
+  color: #101a31;
+}
+
+.box-4 .box-for-content p {
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #101a31;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.box-4 .tailor-sweing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-4 .tailor-sweing .tailor-sweing-box {
+  width: 25%;
+  margin: 3%;
+}
+
+.box-4 .tailor-sweing .tailor-sweing-box div:first-child {
+  height: 58px;
+  margin-bottom: 26px;
+}
+
+.box-4 .tailor-sweing .tailor-sweing-box div:first-child img {
+  height: 100%;
+  width: 47px;
+}
+
+.box-4 .tailor-sweing .tailor-sweing-box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 19px;
+  display: block;
+  text-transform: capitalize;
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 19px;
+  text-transform: capitalize;
+}
+
+.box-4 .tailor-sweing .tailor-sweing-box p {
+  color: #101a31;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .box-for-content h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .box-for-content h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 990px) {
+  .box-4 {
+    margin-left: 15%;
+    margin-right: 10%;
+  }
+  .tailor-sweing {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tailor-sweing .tailor-sweing-box {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .tailor-sweing .tailor-sweing-box {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=SectionFore.css.map */
